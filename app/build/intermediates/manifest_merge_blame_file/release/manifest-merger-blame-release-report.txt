@@ -1,0 +1,721 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.android.yxk"
+4    android:versionCode="118"
+5    android:versionName="1.1.8" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->F:\Android_yxk2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->F:\Android_yxk2\app\src\main\AndroidManifest.xml
+10
+11    <supports-screens
+11-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:6:5-11:39
+12        android:anyDensity="true"
+12-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:7:9-34
+13        android:largeScreens="true"
+13-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:8:9-36
+14        android:normalScreens="true"
+14-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:9:9-37
+15        android:resizeable="true"
+15-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:10:9-34
+16        android:smallScreens="true" />
+16-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:11:9-36
+17
+18    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+18-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:13:5-69
+18-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:13:22-67
+19    <uses-permission android:name="android.permission.SEND_SMS" />
+19-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:14:5-66
+19-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:14:22-64
+20    <uses-permission android:name="android.permission.WRITE_SMS" />
+20-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:15:5-67
+20-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:15:22-65
+21    <uses-permission android:name="android.permission.READ_SMS" />
+21-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:16:5-66
+21-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:16:22-64
+22    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+22-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:17:5-70
+22-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:17:22-68
+23    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+23-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:18:5-72
+23-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:18:22-70
+24    <uses-permission android:name="android.permission.READ_CONTACTS" />
+24-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:19:5-71
+24-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:19:22-69
+25    <!-- 悬浮窗权限 -->
+26    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+26-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:21:5-77
+26-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:21:22-75
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:22:5-67
+27-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:22:22-64
+28    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+28-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:23:5-79
+28-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:23:22-77
+29
+30    <!-- Barcode(二维码)  begin -->
+31    <uses-permission android:name="android.permission.CAMERA" />
+31-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:26:5-65
+31-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:26:22-62
+32    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+32-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:27:5-81
+32-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:27:22-78
+33
+34    <uses-feature android:name="android.hardware.camera" />
+34-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:28:5-60
+34-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:28:19-57
+35    <uses-feature android:name="android.hardware.camera.autofocus" />
+35-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:29:5-70
+35-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:29:19-67
+36
+37    <uses-permission android:name="android.permission.VIBRATE" />
+37-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:30:5-66
+37-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:30:22-63
+38    <uses-permission android:name="android.permission.FLASHLIGHT" />
+38-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:31:5-69
+38-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:31:22-66
+39    <!-- Barcode(二维码)  end -->
+40    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+40-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:33:5-80
+40-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:33:22-78
+41    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+41-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:34:5-78
+41-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:34:22-76
+42    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+42-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:35:5-75
+42-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:35:22-73
+43    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+43-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:36:5-78
+43-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:36:22-76
+44    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+44-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:37:5-75
+44-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:37:22-73
+45    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+45-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:38:5-74
+45-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:38:22-72
+46    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+46-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:39:5-83
+46-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:39:22-81
+47    <uses-permission android:name="android.permission.READ_LOGS" />
+47-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:40:5-67
+47-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:40:22-65
+48    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+48-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:41:5-72
+48-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:41:22-70
+49    <uses-permission android:name="android.permission.CALL_PHONE" />
+49-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:42:5-69
+49-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:42:22-66
+50    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+50-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:43:5-79
+50-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:43:22-77
+51    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+51-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:144:5-124
+51-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:144:22-69
+52
+53    <queries>
+53-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:9:5-19:15
+54        <intent> <!-- H5 支持手淘登录 -->
+54-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:10:9-14:18
+55            <action android:name="*" />
+55-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:11:13-40
+55-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:11:21-37
+56
+57            <data android:scheme="tbopen" />
+57-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:17-50
+57-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:23-48
+58        </intent>
+59
+60        <package android:name="com.eg.android.AlipayGphone" /> <!-- 支付宝 app -->
+60-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:16:9-63
+60-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:16:18-60
+61        <package android:name="com.eg.android.AlipayGphoneRC" /> <!-- 沙箱支付宝 app -->
+61-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:17:9-65
+61-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:17:18-62
+62        <package android:name="hk.alipay.wallet" /> <!-- 香港版支付宝 app -->
+62-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:18:9-52
+62-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:18:18-49
+63        <intent>
+63-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:29:9-31:18
+64            <action android:name="android.intent.action.MAIN" />
+64-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:78:17-68
+64-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:78:25-66
+65        </intent>
+66        <intent>
+66-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:32:9-36:18
+67            <action android:name="android.intent.action.VIEW" />
+67-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:67:17-68
+67-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:67:25-66
+68
+69            <category android:name="android.intent.category.DEFAULT" />
+69-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:17-75
+69-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:27-73
+70        </intent>
+71
+72        <package android:name="com.tencent.mm" />
+72-->[payment-weixin-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\2752af67e1034bb583e4ab02dedb35d2\transformed\jetified-payment-weixin-release\AndroidManifest.xml:8:9-50
+72-->[payment-weixin-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\2752af67e1034bb583e4ab02dedb35d2\transformed\jetified-payment-weixin-release\AndroidManifest.xml:8:18-47
+73    </queries>
+74
+75    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 定义 个验事件通知广播的权限 -->
+75-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:14:5-79
+75-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:14:22-76
+76    <permission
+76-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:17:5-20:18
+77        android:name="com.android.yxk.permission.GYRECEIVER"
+77-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:18:9-62
+78        android:protectionLevel="signature" >
+78-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:19:9-44
+79    </permission> <!-- 使用 个验事件通知广播的权限 -->
+80    <uses-permission android:name="com.android.yxk.permission.GYRECEIVER" />
+80-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:22:5-78
+80-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:22:22-75
+81    <!--
+82    <uses-permission
+83        android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+84    -->
+85    <!-- 华为修改角标需要设置权限 -->
+86    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" /> <!-- vivo 修改角标需要设置权限 -->
+86-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:24:5-91
+86-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:24:22-88
+87    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" />
+87-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:26:5-83
+87-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:26:22-80
+88    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+89    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS" />
+89-->[oaid_sdk_1.0.25.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\1c044decf97f1feb9d4ec8f7e7a82abb\transformed\jetified-oaid_sdk_1.0.25\AndroidManifest.xml:13:5-76
+89-->[oaid_sdk_1.0.25.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\1c044decf97f1feb9d4ec8f7e7a82abb\transformed\jetified-oaid_sdk_1.0.25\AndroidManifest.xml:13:22-73
+90    <uses-permission android:name="freemme.permission.msa" />
+90-->[oaid_sdk_1.0.25.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\1c044decf97f1feb9d4ec8f7e7a82abb\transformed\jetified-oaid_sdk_1.0.25\AndroidManifest.xml:15:5-62
+90-->[oaid_sdk_1.0.25.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\1c044decf97f1feb9d4ec8f7e7a82abb\transformed\jetified-oaid_sdk_1.0.25\AndroidManifest.xml:15:22-59
+91    <uses-permission android:name="android.permission.REORDER_TASKS" />
+91-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-72
+91-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-69
+92
+93    <application
+93-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:45:5-143:19
+94        android:name="io.dcloud.application.DCloudApplication"
+94-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:46:9-63
+95        android:allowBackup="true"
+95-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:47:9-35
+96        android:allowClearUserData="true"
+96-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:48:9-42
+97        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+97-->[androidx.core:core:1.5.0] F:\gradle\gradle-7.4.2\caches\transforms-3\4cb2d3ae910a25e4d3b75b6b0d8d1b11\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+98        android:debuggable="true"
+98-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:52:9-34
+99        android:extractNativeLibs="true"
+99-->[uniapp-v8-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\4ffd461d61217cee806959f41018f4b9\transformed\jetified-uniapp-v8-release\AndroidManifest.xml:29:18-50
+100        android:icon="@drawable/logo"
+100-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:49:9-38
+101        android:label="@string/商客"
+101-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:50:9-35
+102        android:largeHeap="true"
+102-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:51:9-33
+103        android:supportsRtl="true"
+103-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:53:9-35
+104        android:testOnly="true"
+105        android:usesCleartextTraffic="true" >
+105-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:26:9-44
+106
+107        <!-- 应用入口 -->
+108        <activity
+108-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:58:9-81:20
+109            android:name="io.dcloud.PandoraEntry"
+109-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:59:13-50
+110            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale"
+110-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:61:13-92
+111            android:exported="true"
+111-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:64:13-36
+112            android:hardwareAccelerated="true"
+112-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:62:13-47
+113            android:theme="@style/TranslucentTheme"
+113-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:60:13-52
+114            android:windowSoftInputMode="adjustResize" >
+114-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:63:13-55
+115            <intent-filter>
+115-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:65:13-71:29
+116                <data android:scheme="hbuilder" />
+116-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:17-50
+116-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:23-48
+117
+118                <action android:name="android.intent.action.VIEW" />
+118-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:67:17-68
+118-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:67:25-66
+119
+120                <category android:name="android.intent.category.DEFAULT" />
+120-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:17-75
+120-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:27-73
+121                <category android:name="android.intent.category.BROWSABLE" />
+121-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:70:17-77
+121-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:70:27-75
+122            </intent-filter>
+123            <intent-filter>
+123-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:72:13-76:29
+124                <data android:mimeType="image/*" />
+124-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:17-50
+124-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:73:23-49
+125
+126                <action android:name="android.intent.action.SEND" />
+126-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:74:17-68
+126-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:74:25-66
+127
+128                <category android:name="android.intent.category.DEFAULT" />
+128-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:17-75
+128-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:27-73
+129            </intent-filter>
+130            <intent-filter>
+130-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:77:13-80:29
+131                <action android:name="android.intent.action.MAIN" />
+131-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:78:17-68
+131-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:78:25-66
+132
+133                <category android:name="android.intent.category.LAUNCHER" />
+133-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:79:17-76
+133-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:79:27-74
+134            </intent-filter>
+135        </activity>
+136
+137        <meta-data
+137-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:82:9-83:35
+138            android:name="dcloud_uninview_background"
+138-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:82:20-61
+139            android:value="true" />
+139-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:83:13-33
+140
+141        <activity
+141-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:85:9-110:20
+142            android:name="io.dcloud.PandoraEntryActivity"
+142-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:86:13-58
+143            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize"
+143-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:88:13-144
+144            android:exported="true"
+144-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:94:13-36
+145            android:hardwareAccelerated="true"
+145-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:89:13-47
+146            android:launchMode="singleTask"
+146-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:87:13-44
+147            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+147-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:90:13-89
+148            android:screenOrientation="user"
+148-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:91:13-45
+149            android:theme="@style/DCloudTheme"
+149-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:92:13-47
+150            android:windowSoftInputMode="adjustResize" >
+150-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:93:13-55
+151            <intent-filter>
+151-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:96:13-109:29
+152                <category android:name="android.intent.category.DEFAULT" />
+152-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:17-75
+152-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:69:27-73
+153                <category android:name="android.intent.category.BROWSABLE" />
+153-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:70:17-77
+153-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:70:27-75
+154
+155                <action android:name="android.intent.action.VIEW" />
+155-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:67:17-68
+155-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:67:25-66
+156
+157                <data android:scheme=" " />
+157-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:17-50
+157-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:23-48
+158            </intent-filter>
+159        </activity>
+160
+161        <meta-data
+161-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:112:9-83
+162            android:name="WX_APPID"
+162-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:112:21-44
+163            android:value="wx015075e1d4a95978" />
+163-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:112:46-80
+164
+165        <activity
+165-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:113:9-117:25
+166            android:name="io.dcloud.feature.payment.weixin.WXPayProcessMeadiatorActivity"
+166-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:113:19-96
+167            android:excludeFromRecents="true"
+167-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:115:13-46
+168            android:exported="false"
+168-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:114:13-37
+169            android:theme="@style/ProjectDialogTheme" />
+169-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:116:13-54
+170        <activity
+170-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:118:9-122:46
+171            android:name="com.android.yxk.wxapi.WXPayEntryActivity"
+171-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:119:13-68
+172            android:exported="true"
+172-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:120:13-36
+173            android:launchMode="singleTop"
+173-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:122:13-43
+174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+174-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:121:13-72
+175
+176        <meta-data
+176-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:124:9-126:64
+177            android:name="dcloud_appkey"
+177-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:125:13-41
+178            android:value="e6c585fd178f6fede6b6db7ef0043ea6" />
+178-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:126:13-61
+179        <meta-data
+179-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:127:9-128:77
+180            android:name="DCLOUD_PRIVACY_PROMPT"
+180-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:128:13-49
+181            android:value="template" />
+181-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:128:51-75
+182
+183        <service
+183-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:130:9-142:19
+184            android:name="com.android.yxkacc_module.MyAccessibilityService"
+184-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:131:13-76
+185            android:enabled="true"
+185-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:132:13-35
+186            android:exported="true"
+186-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:133:13-36
+187            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+187-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:134:13-79
+188            <intent-filter>
+188-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:135:13-137:29
+189                <action android:name="android.accessibilityservice.AccessibilityService" />
+189-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:136:17-92
+189-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:136:25-89
+190            </intent-filter>
+191
+192            <meta-data
+192-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:139:13-141:57
+193                android:name="android.accessibilityservice"
+193-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:140:17-60
+194                android:resource="@xml/accessibility" />
+194-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:141:17-54
+195        </service>
+196
+197        <uses-library
+197-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:33:9-35:40
+198            android:name="org.apache.http.legacy"
+198-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:34:13-50
+199            android:required="false" />
+199-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:35:13-37
+200
+201        <activity
+201-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:37:9-42:20
+202            android:name="com.alipay.sdk.app.H5PayActivity"
+202-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:38:13-60
+203            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+203-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:39:13-167
+204            android:exported="false"
+204-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:40:13-37
+205            android:theme="@android:style/Theme.NoTitleBar" >
+205-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:41:13-60
+206        </activity>
+207        <activity
+207-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:43:9-48:20
+208            android:name="com.alipay.sdk.app.H5AuthActivity"
+208-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:44:13-61
+209            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+209-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:45:13-167
+210            android:exported="false"
+210-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:46:13-37
+211            android:theme="@android:style/Theme.NoTitleBar" >
+211-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:47:13-60
+212        </activity>
+213        <activity
+213-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:49:9-55:20
+214            android:name="com.alipay.sdk.app.PayResultActivity"
+214-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:50:13-64
+215            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+215-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:51:13-167
+216            android:exported="true"
+216-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:52:13-36
+217            android:launchMode="singleInstance"
+217-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:53:13-48
+218            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+218-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:54:13-72
+219        </activity>
+220        <activity
+220-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:56:9-62:20
+221            android:name="com.alipay.sdk.app.AlipayResultActivity"
+221-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:57:13-67
+222            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+222-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:58:13-167
+223            android:exported="true"
+223-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:59:13-36
+224            android:launchMode="singleTask"
+224-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:60:13-44
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+225-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:61:13-72
+226        </activity>
+227        <activity
+227-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:63:9-69:20
+228            android:name="com.alipay.sdk.app.H5OpenAuthActivity"
+228-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:64:13-65
+229            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+229-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:65:13-167
+230            android:exported="false"
+230-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:66:13-37
+231            android:screenOrientation="behind"
+231-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:67:13-47
+232            android:windowSoftInputMode="adjustResize|stateHidden" >
+232-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:68:13-67
+233        </activity>
+234        <activity
+234-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:70:9-75:20
+235            android:name="com.alipay.sdk.app.APayEntranceActivity"
+235-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:71:13-67
+236            android:configChanges="orientation|keyboardHidden|navigation|screenSize|locale|keyboard|screenLayout|density|fontScale|layoutDirection|smallestScreenSize"
+236-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:72:13-167
+237            android:exported="false"
+237-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:73:13-37
+238            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+238-->[alipaysdk-android-15.8.11.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\eca0bd97ba28d38ecb5f2042f7cc6688\transformed\jetified-alipaysdk-android-15.8.11\AndroidManifest.xml:74:13-72
+239        </activity>
+240
+241        <service
+241-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:15:9-21:19
+242            android:name="com.getui.gtc.GtcService"
+242-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:16:13-52
+243            android:exported="false" >
+243-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:17:13-37
+244            <intent-filter>
+244-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:18:13-20:29
+245                <action android:name="com.getui.gtc.sdk.service.action" />
+245-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:19:17-75
+245-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:19:25-72
+246            </intent-filter>
+247        </service>
+248
+249        <provider
+249-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:23:9-26:40
+250            android:name="com.getui.gtc.base.GtcProvider"
+250-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:24:13-58
+251            android:authorities="com.android.yxk.getui.gtc.provider"
+251-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:25:13-70
+252            android:exported="false" /> <!-- 个验appid配置 -->
+252-->[gtc.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\8216197009d491314a74e0e4236a3377\transformed\jetified-gtc\AndroidManifest.xml:26:13-37
+253        <meta-data
+253-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:29:9-31:46
+254            android:name="GETUI_APPID"
+254-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:30:13-39
+255            android:value="sOmqv0WeosAYCmXEs5F189" /> <!-- 个验渠道配置 -->
+255-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:31:13-43
+256        <meta-data
+256-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:34:9-36:53
+257            android:name="GT_INSTALL_CHANNEL"
+257-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:35:13-46
+258            android:value="HBuilder" />
+258-->[gysdk-3.0.6.0.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\47b01e6262440fb7af7dff5420fd2f8a\transformed\jetified-gysdk-3.0.6.0\AndroidManifest.xml:36:13-50
+259        <!--
+260        <activity
+261            android:name="io.dcloud.imagepick.CustomGalleryActivity"
+262            android:noHistory="true"
+263            android:exported="false"/>
+264        -->
+265        <activity
+265-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:181:9-187:58
+266            android:name="io.dcloud.feature.nativeObj.photoview.PhotoActivity"
+266-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:182:13-79
+267            android:configChanges="orientation|keyboardHidden"
+267-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:183:13-63
+268            android:exported="false"
+268-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:184:13-37
+269            android:noHistory="false"
+269-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:185:13-38
+270            android:screenOrientation="behind"
+270-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:186:13-47
+271            android:theme="@style/DeviceDefault.Light" />
+271-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:187:13-55
+272        <activity
+272-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:188:9-197:58
+273            android:name="io.dcloud.WebAppActivity"
+273-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:189:13-52
+274            android:configChanges="orientation|keyboard|keyboardHidden|smallestScreenSize|screenLayout|screenSize|mcc|mnc|fontScale|navigation"
+274-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:190:13-144
+275            android:hardwareAccelerated="true"
+275-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:191:13-47
+276            android:icon="@drawable/dcloud_recent"
+276-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:192:13-51
+277            android:label="@string/stream_my"
+277-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:193:13-46
+278            android:launchMode="singleTask"
+278-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:194:13-44
+279            android:screenOrientation="portrait"
+279-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:195:13-49
+280            android:theme="@style/DCloudTheme"
+280-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:196:13-47
+281            android:windowSoftInputMode="adjustResize" />
+281-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:197:13-55
+282        <activity
+282-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:198:9-202:75
+283            android:name="io.dcloud.ProcessMediator"
+283-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:199:13-53
+284            android:excludeFromRecents="true"
+284-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:200:13-46
+285            android:exported="false"
+285-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:201:13-37
+286            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+286-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:202:13-72
+287        <activity
+287-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:203:9-209:20
+288            android:name="io.dcloud.WebviewActivity"
+288-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:204:13-53
+289            android:exported="false"
+289-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:205:13-37
+290            android:screenOrientation="portrait"
+290-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:206:13-49
+291            android:theme="@style/ThemeNoTitleBar"
+291-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:207:13-51
+292            android:windowSoftInputMode="adjustPan" >
+292-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:208:13-52
+293        </activity>
+294
+295        <receiver
+295-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:211:9-219:20
+296            android:name="io.dcloud.common.adapter.io.DownloadReceiver"
+296-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:212:13-72
+297            android:exported="false" >
+297-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:213:13-37
+298            <intent-filter>
+298-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:214:13-218:29
+299                <action android:name="android.intent.action.PACKAGE_ADDED" />
+299-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:215:17-78
+299-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:215:25-75
+300
+301                <data android:scheme="package" /> <!-- HERE! -->
+301-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:17-50
+301-->F:\Android_yxk2\app\src\main\AndroidManifest.xml:66:23-48
+302            </intent-filter>
+303        </receiver> <!-- gallery******start -->
+304        <activity
+304-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:222:9-227:63
+305            android:name="com.dmcbig.mediapicker.PickerActivity"
+305-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:223:13-65
+306            android:configChanges="orientation|screenSize"
+306-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:224:13-59
+307            android:exported="false"
+307-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:225:13-37
+308            android:theme="@style/DeviceDefault.Light"
+308-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:226:13-55
+309            android:windowSoftInputMode="stateAlwaysHidden" />
+309-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:227:13-60
+310        <activity
+310-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:228:9-233:63
+311            android:name="com.dmcbig.mediapicker.PreviewActivity"
+311-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:229:13-66
+312            android:configChanges="orientation|screenSize"
+312-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:230:13-59
+313            android:exported="false"
+313-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:231:13-37
+314            android:theme="@style/DeviceDefault.Light"
+314-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:232:13-55
+315            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- gallery******end -->
+315-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:233:13-60
+316        <provider
+316-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:236:9-244:20
+317            android:name="io.dcloud.common.util.DCloud_FileProvider"
+317-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:237:13-69
+318            android:authorities="com.android.yxk.dc.fileprovider"
+318-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:238:13-67
+319            android:exported="false"
+319-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:239:13-37
+320            android:grantUriPermissions="true" >
+320-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:240:13-47
+321            <meta-data
+321-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:241:13-243:64
+322                android:name="android.support.FILE_PROVIDER_PATHS"
+322-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:242:17-67
+323                android:resource="@xml/dcloud_file_provider" />
+323-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:243:17-61
+324        </provider>
+325        <!--
+326            <meta-data
+327            android:name="DCLOUD_STREAMAPP_CHANNEL"
+328            android:value="io.dcloud.%APPID%|%APPID%|" />
+329        -->
+330        <meta-data
+330-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:251:9-253:35
+331            android:name="android.max_aspect"
+331-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:252:13-46
+332            android:value="2.4" />
+332-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:253:13-32
+333
+334        <activity
+334-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:255:9-260:63
+335            android:name="io.dcloud.feature.gallery.imageedit.IMGEditActivity"
+335-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:256:13-79
+336            android:configChanges="orientation|keyboardHidden|screenSize"
+336-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:257:13-74
+337            android:exported="false"
+337-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:258:13-37
+338            android:theme="@style/ImageEditTheme"
+338-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:259:13-50
+339            android:windowSoftInputMode="stateAlwaysHidden" />
+339-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:260:13-60
+340
+341        <service
+341-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:262:9-265:72
+342            android:name="io.dcloud.ads.base.service.DownloadService"
+342-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:263:13-70
+343            android:exported="false"
+343-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:264:13-37
+344            android:permission="android.permission.BIND_JOB_SERVICE" />
+344-->[lib.5plus.base-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\f5beba584e07e5334104d7f1c0a3181a\transformed\jetified-lib.5plus.base-release\AndroidManifest.xml:265:13-69
+345
+346        <meta-data
+346-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:20:9-22:44
+347            android:name="GY_APP_ID"
+347-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:21:13-37
+348            android:value="sOmqv0WeosAYCmXEs5F189" />
+348-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:22:13-41
+349
+350        <activity
+350-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:29:9-34:52
+351            android:name="com.g.gysdk.view.ELoginActivity"
+351-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:30:13-59
+352            android:configChanges="orientation|keyboardHidden|screenSize"
+352-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:31:13-74
+353            android:launchMode="singleTop"
+353-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:32:13-43
+354            android:screenOrientation="portrait"
+354-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:33:13-49
+355            android:theme="@style/mini_activity" />
+355-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:34:13-49
+356        <activity
+356-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:35:9-40:52
+357            android:name="com.g.gysdk.view.ELoginWebActivity"
+357-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:36:13-62
+358            android:configChanges="orientation|keyboardHidden|screenSize"
+358-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:37:13-74
+359            android:launchMode="singleTop"
+359-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:38:13-43
+360            android:screenOrientation="portrait"
+360-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:39:13-49
+361            android:theme="@style/mini_activity" />
+361-->[oauth-univerify-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\3d318a04efe956ed08049d5aec8ee1d0\transformed\jetified-oauth-univerify-release\AndroidManifest.xml:40:13-49
+362
+363        <receiver
+363-->[uniapp-v8-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\4ffd461d61217cee806959f41018f4b9\transformed\jetified-uniapp-v8-release\AndroidManifest.xml:30:9-34:20
+364            android:name="com.taobao.weex.WXGlobalEventReceiver"
+364-->[uniapp-v8-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\4ffd461d61217cee806959f41018f4b9\transformed\jetified-uniapp-v8-release\AndroidManifest.xml:31:13-65
+365            android:enabled="true"
+365-->[uniapp-v8-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\4ffd461d61217cee806959f41018f4b9\transformed\jetified-uniapp-v8-release\AndroidManifest.xml:32:13-35
+366            android:exported="false" >
+366-->[uniapp-v8-release.aar] F:\gradle\gradle-7.4.2\caches\transforms-3\4ffd461d61217cee806959f41018f4b9\transformed\jetified-uniapp-v8-release\AndroidManifest.xml:33:13-37
+367        </receiver>
+368
+369        <activity
+369-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-14:40
+370            android:name="com.android.yxkacc_module.NativePageActivity"
+370-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-72
+371            android:exported="false" />
+371-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+372
+373        <service
+373-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-19:39
+374            android:name="com.android.yxkacc_module.AutoAddService"
+374-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-68
+375            android:enabled="true"
+375-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-35
+376            android:exported="true" />
+376-->[:yxkacc_module] F:\Android_yxk2\yxkacc_module\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-36
+377    </application>
+378
+379</manifest>

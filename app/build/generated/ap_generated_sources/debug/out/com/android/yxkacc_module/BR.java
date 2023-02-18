@@ -1,0 +1,5 @@
+package com.android.yxkacc_module;
+
+public class BR {
+  public static final int _all = 0;
+}

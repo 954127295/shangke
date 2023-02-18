@@ -1,0 +1,13 @@
+{
+  "nativePlugins": [
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "AccModule",
+          "class": "com.android.yxkacc_module.AccModule"
+        }
+      ]
+    }
+  ]
+}
